@@ -7,23 +7,7 @@ import ConfirmationModal from "../Global/ConfirmationModal";
 import { handleDeleteToDo, handleEditToDoHook } from "../../hooks/todo.hook";
 import TodoDetailsModal from "./TodoDetails";
 import { toast } from "react-toastify";
-
-export type ToDoItemStatus = "done" | "pending" | "canceled";
-
-export type ToDoItem = {
-  id: string;
-  title: string;
-  description: string;
-  status: ToDoItemStatus;
-  createdAt: string;
-  updatedAt: string;
-};
-
-export type ToDoCardsProps = {
-  listItems: ToDoItem[];
-  handleRemoveToDo: (id: string) => void;
-  handleEditToDo: (id: string, data: Partial<ToDoItem>) => void;
-};
+import { ToDoCardsProps, ToDoItem } from "../../types/ToDoTypes";
 
 const statusColor = {
   done: "#52c41a",

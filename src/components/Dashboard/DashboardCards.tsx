@@ -8,11 +8,8 @@ import {
 } from "@ant-design/icons";
 import { StyledDashCard } from "./dashboard.styled";
 import { StyledTitle } from "../Global/global.styled";
-import { ToDoItem } from "../ToDo/ToDoCards";
-
-export type ToDoDashProps = {
-  listToDos: ToDoItem[];
-};
+import { ToDoDashProps } from "../../types/DashTypes";
+import { ToDoItem } from "../../types/ToDoTypes";
 
 const DashboardCards: React.FC<ToDoDashProps> = ({ listToDos }) => {
   const totalTasks = listToDos.length;

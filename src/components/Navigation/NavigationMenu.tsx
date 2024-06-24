@@ -105,7 +105,7 @@ const NavigationMenu: React.FC<{
 
 const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const path = useLocation().pathname;
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {

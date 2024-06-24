@@ -1,11 +1,6 @@
 import { toast } from "react-toastify";
 import instance from "../config/api";
-
-export type TypeLoginData = {
-  email: string;
-  password: string;
-  remember: boolean;
-};
+import { TypeLoginData } from "../types/AuthTypes";
 
 export const handleLogin = async ({
   email,
