@@ -59,7 +59,7 @@ Configure as variáveis de ambiente:
 
 Crie um arquivo .env na raiz do projeto e configure as seguintes variáveis:
 
-VITE_API_URL=http://localhost:3000
+VITE_API_BASE_URL=http://localhost:3000
 
 Inicie o projeto localmente:
 
